@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>호텔 예약사이트</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- 공통으로 쓰이는 css -->
+<link rel="stylesheet" type="text/css" th:href="@{//https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Playfair+Display:wght@700&family=Roboto:wght@300&display=swap}">
+
+<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+<link rel="stylesheet" th:href="@{/css/animate.css}">
+<link rel="stylesheet" th:href="@{/css/owl.carousel.min.css}">
+<link rel="stylesheet" th:href="@{/css/aos.css}">
+<link rel="stylesheet" th:href="@{/css/bootstrap-datepicker.css}">
+<link rel="stylesheet" th:href="@{/css/jquery.timepicker.css}">
+<link rel="stylesheet" th:href="@{/css/fancybox.min.css}">
+
+<link rel="stylesheet" th:href="@{/fonts/ionicons/css/ionicons.min.css}">
+<link rel="stylesheet" th:href="@{/fonts/fontawesome/css/font-awesome.min.css}">
+
+<link rel="stylesheet" th:href="@{/css/style.css}">
+
+</head>
+<body>
+  <div class="site-wrap">
+	<div th:replace="fragments/header::header"></div>
+	<div layout:fragment="content" class="content"></div>
+	<div th:replace="fragments/footer::footer"></div>
+  </div>
+
+  <!-- 공통으로 쓰이는 js -->
+    <script th:src="@{/js/jquery-3.3.1.min.js}"></script>
+    <script th:src="@{/js/jquery-migrate-3.0.1.min.js}"></script>
+    <script th:src="@{/js/popper.min.js}"></script>
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+    <script th:src="@{/js/owl.carousel.min.js}"></script>
+    <script th:src="@{/js/jquery.stellar.min.js}"></script>
+    <script th:src="@{/js/jquery.fancybox.min.js}"></script>
+    
+    <script th:src="@{/js/aos.js}"></script>
+    
+    <script th:src="@{/js/bootstrap-datepicker.js}"></script> 
+    <script th:src="@{/js/jquery.timepicker.min.js}"></script> 
+
+    <script th:src="@{/js/main.js}"></script>
+  
+  <!-- 각 페이지의 스크립트가 작성될 위치 -->
+  <th:block layout:fragment="script"></th:block>
+</body>
+</html>
