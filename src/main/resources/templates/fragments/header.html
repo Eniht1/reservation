@@ -26,7 +26,8 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 											<li><a href="rooms.html">지역별 호텔</a></li>
 											<li><a href="about.html">인기호텔</a></li>
 											<li><a href="events.html">특가 이벤트</a></li>
-											<li><a href="/members/login">로그인</a></li>	
+											<li><a href="/members/login" sec:authorize="isAnonymous()">로그인</a></li>
+											<li><a href="/members/logout" sec:authorize="isAuthenticated()">로그아웃</a></li>
 										</ul>
 									</div>
 								</div>
